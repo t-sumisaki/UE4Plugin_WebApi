@@ -2,7 +2,7 @@
 
 public class WebApi : ModuleRules
 {
-	public WebApi(TargetInfo Target)
+	public WebApi(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
